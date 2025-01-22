@@ -35,12 +35,14 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <nav className="flex items-center justify-between px-4 py-2 border-b">
-            <div className="font-semibold text-2xl tracking-tight underline">
-              Jvst do it<span className="text-3xl font-bold">!</span>
-            </div>
-            <div>
-              <ModeToggle />
+          <nav className="w-full px-4 py-2 border-b dark:bg-gray-800 bg-white">
+            <div className="flex items-center justify-between max-w-6xl mx-auto">
+              <div className="font-semibold text-2xl tracking-tight underline">
+                Jvst do it<span className="text-3xl font-bold">!</span>
+              </div>
+              <div>
+                <ModeToggle />
+              </div>
             </div>
           </nav>
           <main>{children}</main>
